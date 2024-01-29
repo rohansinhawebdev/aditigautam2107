@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+nav {
+  background: black;
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+}
+
+.logo {
+  width: 20%;
+  padding-left: 50px;
+  color: white;
+}
+
+.list-items {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-size: 13px;
+  transition: 0.4s;
+}
+
+.link:hover {
+  color: #db5dab;
+}
+
+.nav-btns {
+  width: 30%;
+  font-size: 20px;
+}
+
+.btn-nav-i {
+  color: white;
+  float: right;
+  padding-right: 20px;
+  transition: 0.4s;
+}
+
+.btn-nav-i:hover {
+  color: #db5dab;
+}
+
+.main {
+  background: black;
+  position: relative;
+  height: 90vh;
+  width: 100%;
+}
+.main-left {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 65%;
+}
+.main-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 35%;
+  background: black;
+}
+
+.main-right img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  animation: animation 5s forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.social-media {
+  position: absolute;
+  height: 100%;
+  width: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30%;
+  background: white;
+  top: 20px;
+}
+.social-media::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30%;
+  background: white;
+  bottom: 20px;
+}
+
+.s-btn {
+  color: white;
+  margin-top: 20px;
+  transition: 0.4s;
+  font-size: 20px;
+}
+
+.s-btn:hover {
+  color: #db5dab;
+}
+
+.banner {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-text h1 {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
+  color: white;
+}
+
+.f-text span {
+  color: #db5dab;
+}
+
+.btn {
+  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  border: solid 1px white;
+  padding: 20px 40px;
+  transition: 0.4s;
+}
+
+.btn:hover {
+  background: #db5dab;
+}
+
+    </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Fashion</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <h1>FASHION</h1>
+        </div>
+        <ul class="list-items">
+          <li><a href="#" class="link">HOME</a></li>
+          <li><a href="#" class="link">COLLECTION</a></li>
+          <li><a href="#" class="link">CONTACT US</a></li>
+          <li><a href="#" class="link">ABOUT US</a></li>
+        </ul>
+
+        <div class="nav-btns">
+          <a href="#" class="btn-nav-i"><i class="fas fa-cart-plus"></i></a>
+          <a href="#" class="btn-nav-i"><i class="fas fa-search"></i></a>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="main-left">
+          <div class="social-media">
+            <a href="#" class="s-btn"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="s-btn"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="s-btn"><i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="banner">
+            <div class="f-text">
+              <h1>
+                FASHION
+                <br />
+                <span>MADE</span>
+                <br />
+                SIMPLE.
+              </h1>
+            </div>
+            <a href="#" class="btn">SHOP NOW</a>
+          </div>
+        </div>
+        <div class="main-right">
+          <img src="img.jpg" />
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

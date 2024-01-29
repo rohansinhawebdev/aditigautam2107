@@ -1,0 +1,652 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Ibarra Real Nova', serif;
+    position: relative;
+    padding-bottom: 0;
+    background-color: #111;
+  }
+  
+  header {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  nav {
+    background: black;
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: larger;
+    width: 30%;
+    padding-left: 50px;
+    color: white;
+  }
+  .logo:hover {
+    color: #db5dab;
+  }
+  
+  .list-items {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+  }
+  
+  .link {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 13px;
+    transition: 0.4s;
+  }
+  
+  .link:hover {
+    color: #db5dab;
+  }
+  
+  .nav-btns {
+    width: 30%;
+    font-size: 20px;
+  }
+  
+  .btn-nav-i {
+    color: white;
+    float: right;
+    padding-right: 20px;
+    transition: 0.4s;
+  }
+  
+  .btn-nav-i:hover {
+    color: #db5dab;
+  }
+  
+  .main {
+    background: black;
+    position: relative;
+    height: 90vh;
+    width: 100%;
+  }
+  .main-left {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 65%;
+  }
+  .main-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 35%;
+    background: #000;
+    background-image: url(img/bg6-removebg-preview.png);
+    background-size: 500px 250px;
+    animation: animation 1s backwards;
+    animation-delay: 1s;
+  }
+  
+  .main-right img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    animation: animation 1s forwards;
+    animation-delay: 1s;
+    opacity: 0;
+    background: transparent;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+  }
+  
+  @keyframes animation {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .social-media {
+    position: absolute;
+    height: 100%;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  .social-media::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background: white;
+    top: 20px;
+  }
+  .social-media::after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 30%;
+    background: white;
+    bottom: 20px;
+  }
+  
+  .s-btn {
+    color: white;
+    margin-top: 20px;
+    transition: 0.4s;
+    font-size: 20px;
+  }
+  
+  .s-btn:hover {
+    color: #db5dab;
+  }
+  
+  .banner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .f-text h1 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    color: white;
+  }
+  
+  .f-text span {
+    color: #db5dab;
+  }
+  
+  .btn {
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 20px 40px;
+    transition: 0.4s;
+  }
+  
+  .btn:hover {
+    background: #db5dab;
+  }
+ 
+#page-header{
+    background-image: url(img/ishanaditibg5.jpg);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+#page-header2{
+    background-image: url(img/bg6.jpg);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header2 h2,
+#page-header2 p{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+#page-header3{
+    background-image: url(img/shopbg2.jpg);
+    width: 100%;
+    height: 20vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header3 h2,
+#page-header3 p{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+#page-header4{
+    background-image: url(img/bg6.jpg);
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-bottom: 0;
+}
+#page-header5{
+    background-color: #F9629F;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header5 h2,
+#page-header5 p{
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+#contactus{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#page-header6{
+    background-color: #db5dab;
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top: 0;
+}
+#page-header7{
+    background-color: #db5dab;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.timeline {
+display: flex;
+margin: 0 auto;
+flex-wrap: wrap;
+flex-direction: column;
+max-width: 700px;
+position: relative;
+}
+.timeline__content-title {
+font-weight: normal;
+font-size: 66px;
+margin: -10px 0 0 0;
+transition: 0.4s;
+padding: 0 10px;
+box-sizing: border-box;
+font-family: 'Oswald', sans-serif;
+color: #fff;
+}
+.timeline__content-desc {
+margin: 0;
+font-size: 15px;
+box-sizing: border-box;
+color: rgba(255, 255, 255, .7);
+font-family: 'Roboto Condensed', sans-serif;
+font-weight: normal;
+line-height: 25px;
+}
+.timeline:before {
+position: absolute;
+left: 50%;
+width: 2px;
+height: 100%;
+margin-left: -1px;
+content: "";
+background: rgba(255, 255, 255, .07);
+}
+@media only screen and (max-width: 767px) {
+.timeline:before {
+left: 40px;
+}
+}
+.timeline-item {
+padding: 40px 0;
+opacity: 0.3;
+filter: blur(2px);
+transition: 0.5s;
+box-sizing: border-box;
+width: calc(50% - 40px);
+display: flex;
+position: relative;
+transform: translateY(-80px);
+}
+.timeline-item:before {
+content: attr(data-text);
+letter-spacing: 3px;
+width: 100%;
+position: absolute;
+color: rgba(255, 255, 255, .5);
+font-size: 13px;
+font-family: 'Pathway Gothic One', sans-serif;
+border-left: 2px solid rgba(255, 255, 255, .5);
+top: 70%;
+margin-top: -5px;
+padding-left: 15px;
+opacity: 0;
+right: calc(-100% - 56px);
+}
+.timeline-item:nth-child(even) {
+align-self: flex-end;
+}
+.timeline-item:nth-child(even):before {
+right: auto;
+text-align: right;
+left: calc(-100% - 56px);
+padding-left: 0;
+border-left: none;
+border-right: 2px solid rgba(255, 255, 255, .5);
+padding-right: 15px;
+}
+.timeline-item--active {
+opacity: 1;
+transform: translateY(0);
+filter: blur(0px);
+}
+.timeline-item--active:before {
+top: 50%;
+transition: 0.3s all 0.2s;
+opacity: 1;
+}
+.timeline-item--active .timeline__content-title {
+margin: -50px 0 20px 0;
+}
+@media only screen and (max-width: 767px) {
+.timeline-item {
+align-self: baseline !important;
+width: 100%;
+padding: 0 30px 150px 80px;
+}
+.timeline-item:before {
+left: 10px !important;
+padding: 0 !important;
+top: 50px;
+text-align: center !important;
+width: 60px;
+border: none !important;
+}
+.timeline-item:last-child {
+padding-bottom: 40px;
+}
+}
+.timeline__img {
+max-width: 100%;
+box-shadow: 0 10px 15px rgba(0, 0, 0, .4);
+}
+.timeline-container {
+width: 100%;
+position: relative;
+padding: 80px 0;
+transition: 0.3s ease 0s;
+background-attachment: fixed;
+background-size: cover;
+}
+.timeline-container:before {
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.6);
+content: "";
+}
+.timeline-header {
+width: 100%;
+text-align: center;
+margin-bottom: 80px;
+position: relative;
+}
+.timeline-header__title {
+color: #db5dab;
+font-size: 58px;
+font-family: 'Ibarra Real Nova', serif;
+font-weight: normal;
+margin: 0;
+}
+.timeline-header__subtitle {
+color: rgba(255, 255, 255, .5);
+font-family: 'Pathway Gothic One', sans-serif;
+font-size: 16px;
+letter-spacing: 5px;
+margin: 10px 0 0 0;
+font-weight: normal;
+}
+.demo-footer {
+padding: 60px 0;
+text-align: center;
+}
+.demo-footer a {
+color: #999;
+display: inline-block;
+font-family: Cardo;
+}
+.adititimeline{
+    background: url(img/timelinebg2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+hr.one{
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #db5dab;
+    padding: 0;
+}
+#page-header8{
+    background-color: #db5dab;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#page-header8 h2{
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+#page-header8 p{
+    text-align: center;
+    color: #000;
+    font-size: 20px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+footer{
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family: 'Ibarra Real Nova', serif;
+    padding-top: 40px;
+    color: #fff;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #db5dab;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: lowercase;
+    opacity: .4;
+    font-weight: 200;
+}
+#aboutus{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+}
+.about{
+    background: url("img/aditi_header_sec-removebg-preview 3.png") no-repeat left;
+    background-size: 40%;
+    background-color: #111;
+    overflow: hidden;
+    padding: 100px 0;
+}
+.inner-section{
+    width: 55%;
+    float: right;
+    background-color: #db5dab;
+    padding: 140px;
+    box-shadow: 13px 12px 8px rgba(0,0,0,0.3);
+}
+.inner-section h1{
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: 900;
+}
+.text{
+    font-size: 30px;
+    color: #000;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+.skills button{
+    font-size: 22px;
+    text-align: center;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 20px;
+    padding: 8px;
+    width: 200px;
+    background-color: #111;
+    color: white;
+    cursor: pointer;
+}
+.skills button:hover{
+    transition: 1s;
+    background-color: #fff;
+    color: #db5dab;
+}
+#page-header9{
+    background-color: #db5dab;
+    width: 100%;
+    height: 150px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+#page-header9 h2{
+    text-align: center;
+    color: #000;
+    font-size: 50px;
+    font-family: 'Ibarra Real Nova', serif;
+}
+#page-header9 p{
+    text-align: center;
+    color: #000;
+    font-size: 30px;
+    font-family: 'Ibarra Real Nova', serif;
+}
